@@ -76,7 +76,12 @@ Example: Consider a training a dataset with 100 examples that is divided into 20
 The '\_' indicates the end of the token. The subtoken vocabulary list is guaranteed to contain the alphabet (including numbers and special characters), so all words can be tokenized.
 
 ## 文件位置
-
-
-
-
+全部文件都上传到github上面链接如下：
+https://github.com/dong-jf15/TransformerTranslationModel.git
+需要特别注意的是为了方便，我将训练用到的
+'wmt32k-train.lang1'和‘wmt32k-trainl.lang2'
+测试用到的
+'newstest2014.en'和'newstest2014.de'
+训练得到参数
+'transformer.params'
+都直接放在了transformer_main.py的同级目录下
