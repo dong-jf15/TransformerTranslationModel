@@ -84,8 +84,8 @@ def train_schedule(train_eval_iterations, single_iteration_train_steps, params,
 
     # Loop training/evaluation/bleu cycles
     subtokenizer = tokenizer.Subtokenizer(vocab_file='vocab.ende.32768')
-    dataset_train = dataset.TranslationDataset(dir_lang1='wmt32k-dev.lang1',
-                                               dir_lang2='wmt32k-dev.lang2',
+    dataset_train = dataset.TranslationDataset(dir_lang1='wmt32k-train.lang1',
+                                               dir_lang2='wmt32k-train.lang2',
                                                subtokenizer=subtokenizer)
     global_step = 0
     best_bleu_score = 0
